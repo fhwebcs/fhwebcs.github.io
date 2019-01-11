@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<title>Page not found &#8211; wp-test</title>
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="wp-test &raquo; Feed" href="http://holger.box:8000/feed/" />
+<link rel="alternate" type="application/rss+xml" title="wp-test &raquo; Comments Feed" href="http://holger.box:8000/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://holger.box:8000/wp-includes/css/dist/block-library/style.min.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='http://holger.box:8000/wp-includes/css/dist/block-library/theme.min.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='twentynineteen-style-css'  href='http://holger.box:8000/wp-content/themes/twentynineteen/style.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentynineteen-print-style-css'  href='http://holger.box:8000/wp-content/themes/twentynineteen/print.css?ver=1.1' type='text/css' media='print' />
+<link rel='https://api.w.org/' href='http://holger.box:8000/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://holger.box:8000/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 5.0.3" />
+</head>
+
+<body class="error404 wp-custom-logo wp-embed-responsive hfeed image-filters-enabled">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header">
+
+			<div class="site-branding-container">
+				<div class="site-branding">
+
+			<div class="site-logo"><a href="http://holger.box:8000/" class="custom-logo-link" rel="home" itemprop="url"><img width="190" height="190" src="http://holger.box:8000/wp-content/uploads/2019/01/cropped-zen.jpg" class="custom-logo" alt="wp-test" itemprop="logo" srcset="http://holger.box:8000/wp-content/uploads/2019/01/cropped-zen.jpg 190w, http://holger.box:8000/wp-content/uploads/2019/01/cropped-zen-150x150.jpg 150w" sizes="(max-width: 34.9rem) calc(100vw - 2rem), (max-width: 53rem) calc(8 * (100vw / 12)), (min-width: 53rem) calc(6 * (100vw / 12)), 100vw" /></a></div>
+								<p class="site-title"><a href="http://holger.box:8000/" rel="home">wp-test</a></p>
+			
+				<p class="site-description">
+				Just another WordPress site			</p>
+			</div><!-- .site-branding -->
+			</div><!-- .layout-wrap -->
+
+					</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+			<div class="error-404 not-found">
+				<header class="page-header">
+					<h1 class="page-title">Oops! That page can&rsquo;t be found.</h1>
+				</header><!-- .page-header -->
+
+				<div class="page-content">
+					<p>It looks like nothing was found at this location. Maybe try a search?</p>
+					<form role="search" method="get" class="search-form" action="http://holger.box:8000/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>				</div><!-- .page-content -->
+			</div><!-- .error-404 -->
+
+		</main><!-- #main -->
+	</section><!-- #primary -->
+
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer">
+		
+	<aside class="widget-area" role="complementary" aria-label="Footer">
+							<div class="widget-column footer-widget-1">
+								<section id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+					<a href="http://holger.box:8000/2019/01/blazing-fast-wordpress/">Blazing fast WordPress</a>
+									</li>
+											<li>
+					<a href="http://holger.box:8000/2019/01/my-second-post/">My second post</a>
+									</li>
+											<li>
+					<a href="http://holger.box:8000/2019/01/hello-world/">Hello world!</a>
+									</li>
+					</ul>
+		</section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
+			<li><a href='http://holger.box:8000/2019/01/'>January 2019</a></li>
+		</ul>
+		</section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://holger.box:8000/category/uncategorized/" >Uncategorized</a>
+</li>
+		</ul>
+</section>					</div>
+					</aside><!-- .widget-area -->
+
+		<div class="site-info">
+										<a class="site-name" href="http://holger.box:8000/" rel="home">wp-test</a>,
+						<a href="https://wordpress.org/" class="imprint">
+				Proudly powered by WordPress.			</a>
+								</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	
+</body>
+</html>
