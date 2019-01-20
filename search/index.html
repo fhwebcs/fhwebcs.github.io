@@ -35,21 +35,23 @@
                 {{{text}}}
               </script></div>
             
-            <script id="head-template" type="text/x-handlebars-template">
+              <script id="head-template" type="text/x-handlebars-template">
                 
                 <article class="post type-post status-publish format-standard has-post-thumbnail hentry entry">
                     <div class="entry-content">
                     {{#if found}}
                         <h1 class="page-title">
-                            Search results for:
-                        <div class="page-description">{{search}}</script></div>
+                            Search results for:</h1>
+                        <div class="page-description">{{search}}</div>
                     {{else}}
                         <h1 class="page-title">Nothing Found</h1>
                         <div class="page-content">
                             <p>Sorry, but nothing matched your search terms. Please try again with some different keywords.</p>
                         </div>
                     {{/if}}
-                    
+                    </div>
+                </article>
+            </script>
                 
             
             <script id="hit-template" type="text/x-handlebars-template">
