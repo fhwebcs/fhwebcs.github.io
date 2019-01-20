@@ -37,7 +37,8 @@
 				Just another WordPress site			</p>
 				<nav id="site-navigation" class="main-navigation" aria-label="Top Menu">
 			<div class="menu-main-menu-container"><ul id="menu-main-menu" class="main-menu"><li id="menu-item-78" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-78"><a href="http://holger.box:8000/mystaticsite/">Home</a></li>
-<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="http://holger.box:8000/mystaticsite/sample-page/">About</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="/welcome/">Welcome</a></li>
+<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="/sample/">About</a></li>
 </ul></div><div class="main-menu-more"><ul class="main-menu"><li class="menu-item menu-item-has-children"><button class="submenu-expand main-menu-more-toggle is-empty" tabindex="-1" aria-label="More" aria-haspopup="true" aria-expanded="false"><span class="screen-reader-text">More</span><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="currentColor" fill-rule="nonzero" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM6 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></g></svg></button><ul class="sub-menu hidden-links"><li id="menu-item--1" class="mobile-parent-nav-menu-item menu-item--1"><button class="menu-item-link-return"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>Back</button></li></ul></li></ul></div>		</nav><!-- #site-navigation -->
 		</div><!-- .site-branding -->
 			</div><!-- .layout-wrap -->
@@ -77,16 +78,16 @@
 							<div class="widget-column footer-widget-1">
 							<section id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
-					<a href="http://holger.box:8000/mystaticsite/2019/01/next-step-add-solr-search/">Next step: Add Solr search</a>
+					<a href="/2019/01/next-step-add-solr-search/">Next step: Add Solr search</a>
 									</li>
 											<li>
-					<a href="http://holger.box:8000/mystaticsite/2019/01/blazing-fast-wordpress/">Blazing fast WordPress</a>
+					<a href="/2019/01/blazing-fast-wordpress/">Blazing fast WordPress</a>
 									</li>
 											<li>
-					<a href="http://holger.box:8000/mystaticsite/2019/01/my-second-post/">My second post</a>
+					<a href="/2019/01/my-second-post/">My second post</a>
 									</li>
 											<li>
-					<a href="http://holger.box:8000/mystaticsite/2019/01/hello-world/">Hello world!</a>
+					<a href="/2019/01/hello-world/">Hello world!</a>
 									</li>
 					</ul>
 		</section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
@@ -105,7 +106,7 @@
 										<a class="site-name" href="http://holger.box:8000/mystaticsite/" rel="home">wp-test</a>,
 						<a href="https://wordpress.org/" class="imprint">
 				Proudly powered by WordPress.			</a>
-			<a class="privacy-policy-link" href="http://holger.box:8000/mystaticsite/privacy-policy/">Privacy Policy</a><span role="separator" aria-hidden="true"></span>					</div><!-- .site-info -->
+			<a class="privacy-policy-link" href="/privacy-policy/">Privacy Policy</a><span role="separator" aria-hidden="true"></span>					</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
