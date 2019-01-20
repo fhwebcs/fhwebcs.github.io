@@ -39,7 +39,8 @@
             </div>
           </script>
           <script id="head-template" type="text/x-handlebars-template">
-              <header class="page-header">
+                <article class="post type-post status-publish format-standard has-post-thumbnail hentry entry">
+                    <div class="entry-content">
                   {{#if found}}
                       <h1 class="page-title">
                           Search results for:</h1>
@@ -50,7 +51,8 @@
                           <p>Sorry, but nothing matched your search terms. Please try again with some different keywords.</p>
                       </div>
                   {{/if}}
-              </header>
+                </div>
+            </article>
           </script>
           <script id="hit-template" type="text/x-handlebars-template">
               <article class="post type-post status-publish format-standard has-post-thumbnail hentry entry">
