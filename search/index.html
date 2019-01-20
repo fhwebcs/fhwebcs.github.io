@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><base href="/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Search &ndash; wp-test</title><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="inc/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="wp-block-library-theme-css" href="inc/css/dist/block-library/theme.min.css" type="text/css" media="all"><link rel="stylesheet" id="twentynineteen-style-css" href="contents/ui/mytheme/style.css" type="text/css" media="all"><link rel="stylesheet" id="twentynineteen-print-style-css" href="contents/ui/mytheme/print.css" type="text/css" media="print"><link rel="icon" href="contents/uploads/2019/01/cropped-zen-1-32x32.jpg" sizes="32x32"><link rel="icon" href="contents/uploads/2019/01/cropped-zen-1-192x192.jpg" sizes="192x192"><link rel="apple-touch-icon-precomposed" href="contents/uploads/2019/01/cropped-zen-1-180x180.jpg"><meta name="msapplication-TileImage" content="contents/uploads/2019/01/cropped-zen-1-270x270.jpg"></head><body class="page-template-default page page-id-87 wp-custom-logo wp-embed-responsive singular image-filters-enabled">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header"><div class="site-branding-container">
+				<div class="site-branding">
+
+			<div class="site-logo"><a href="" class="custom-logo-link" rel="home" itemprop="url"><img width="190" height="190" src="contents/uploads/2019/01/cropped-zen.jpg" class="custom-logo" alt="wp-test" itemprop="logo" srcset="contents/uploads/2019/01/cropped-zen.jpg 190w, contents/uploads/2019/01/cropped-zen-150x150.jpg 150w" sizes="(max-width: 190px) 100vw, 190px"></a></div>
+								<p class="site-title"><a href="" rel="home">wp-test</a></p>
+			
+				<p class="site-description">
+				Just another WordPress site			</p>
+				<nav id="site-navigation" class="main-navigation" aria-label="Top Menu"><div class="menu-main-menu-container"><ul id="menu-main-menu" class="main-menu"><li id="menu-item-78" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-78"><a href="">Home</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="welcome/">Welcome</a></li>
+<li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-87 current_page_item menu-item-89"><a href="search/">Search</a></li>
+<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="sample/">About</a></li>
+</ul></div><div class="main-menu-more"><ul class="main-menu"><li class="menu-item menu-item-has-children"><button class="submenu-expand main-menu-more-toggle is-empty" tabindex="-1" aria-label="More" aria-haspopup="true" aria-expanded="false"><span class="screen-reader-text">More</span><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path fill="currentColor" fill-rule="nonzero" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM6 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path></g></svg></button><ul class="sub-menu hidden-links"><li id="menu-item--1" class="mobile-parent-nav-menu-item menu-item--1"><button class="menu-item-link-return"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>Back</button></li></ul></li></ul></div>		</nav></div>
+			</div>
+
+					</header><div id="content" class="site-content">
+    <script src="/search.js"></script><script src="/search-handlebar.js"></script><section id="primary" class="content-area"><main id="main" class="site-main"><article class="post type-post status-publish format-standard has-post-thumbnail hentry entry"><div class="entry-content">
+                                        <b>Handlebars.js and Solr Demo</b><br>
+                                        Type in something and click the <b>search</b> button!<br><label>
+                                        <input style="width:100%" id="searchterm" type="search" class="search-field" placeholder="Search &hellip;" value="WordPress" name="s"></label>
+                                        <input style="vertical-align: middle; margin: 1rem 0;" id="search" type="submit" class="search-submit" value="Search"></div>
+                                </article><div id="rs"></div>
+
+			
+		</main></section><script id="hit-template-alt" type="text/x-handlebars-template">
+              <div class="entry">
+                
+                {{#if image}} <img src="{{image}}" /> {{/if}}
+                <b><a href="{{link}}">{{title}}<br>
+                {{{text}}}
+              </script></div>
+            
+            <script id="head-template" type="text/x-handlebars-template">
+                
+                <article class="post type-post status-publish format-standard has-post-thumbnail hentry entry">
+                    <div class="entry-content">
+                    {{#if found}}
+                        <h1 class="page-title">
+                            Search results for:
+                        <div class="page-description">{{search}}</script></div>
+                    {{else}}
+                        <h1 class="page-title">Nothing Found</h1>
+                        <div class="page-content">
+                            <p>Sorry, but nothing matched your search terms. Please try again with some different keywords.</p>
+                        </div>
+                    {{/if}}
+                    
+                
+            
+            <script id="hit-template" type="text/x-handlebars-template">
+                <article class="post type-post status-publish format-standard has-post-thumbnail hentry entry">
+                    <header class="entry-header">
+                        <h2 class="entry-title"><a href="{{link}}" rel="bookmark">{{title}}
+                    
+                
+                    <figure class="post-thumbnail">
+                        <a class="post-thumbnail-inner" href="{{link}}" aria-hidden="true" tabindex="-1">
+                            <!--<img src="{{image}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="" sizes="" width="100" height="100">-->
+                            {{{image}}}
+                        
+                    
+                            
+                    <div class="entry-content">
+                        <p>{{{text}}}
+                    
+                
+                    {{#if footer}}
+                    <footer class="entry-footer">
+                        <span class="byline"><svg class="svg-icon" width="16" height="16" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"><path d="M0 0h24v24H0z" fill="none"><span class="screen-reader-text">Posted by<span class="author vcard"><a class="url fn n" href="{{authorlink}}">{{author}}
+                        <span class="posted-on"><svg class="svg-icon" width="16" height="16" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><path id="a" d="M0 0h24v24H0V0z"><clipPath id="b"><use xlink:href="#a" overflow="visible"><path clip-path="url(#b)" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"><a href="{{link}}" rel="bookmark"><time class="entry-date published" datetime="{{postdate}}">{{displaydate}}
+                        {{#if cats}}
+                        <span class="cat-links"><svg class="svg-icon" width="16" height="16" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"><path d="M0 0h24v24H0z" fill="none"><span class="screen-reader-text">Posted in{{{cats}}}
+                        {{/if}}
+                        <!--<span class="comments-link"><svg class="svg-icon" width="16" height="16" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"><path d="M0 0h24v24H0z" fill="none"><a href="2019/01/hello-world/#respond">Leave a comment<span class="screen-reader-text"> on Hello world!-->
+                    
+                    {{/if}}
+                
+            </script><script type="text/javascript">
+              var hitTemplate = Handlebars.compile($("#hit-template").html());
+              var headTemplate = Handlebars.compile($("#head-template").html());
+
+              $("#search").click(function(){
+                $("#rs").empty();
+                $.getJSON("https://search.web-cs.io/solr/select?q=" + $("#searchterm").val() + "&wt=json&json.wrf=?&indent=true", function(result){
+                  $("#rs").append(headTemplate({
+                      search: $("#searchterm").val(),
+                      found: result.response.docs.length > 0
+                  }));
+                  
+                  for (var i = 0; i < result.response.docs.length; i++) {
+                    let d = result.response.docs[i];
+                    let cats = [];
+                    if( d.categories_str ) {
+                        for(var j = 0; j < d.categories_str.length; j++ ) {
+                            cats.push( '<a href="/category/'+d.categories_slug_str[j]+'/" rel="category tag">' + d.categories_str[j] + '' );
+                        }
+                    }
+                    
+                    $("#rs").append(hitTemplate({
+                        cats: cats.join(', '),
+                        footer: d.post_type == 'post',
+                        title: result.response.docs[i].post_title, 
+                        link: result.response.docs[i].permalink, 
+                        image: result.response.docs[i].featured_image,
+                        displaydate: result.response.docs[i].displaydate,
+                        postdate: result.response.docs[i].post_date,
+                        author: result.response.docs[i].post_author,
+                        authorlink: result.response.docs[i].author_s,
+                        text: result.response.docs[i].post_excerpt}));
+                  }
+                  
+                });
+              });
+            </script><footer id="colophon" class="site-footer"><aside class="widget-area" role="complementary" aria-label="Footer"><div class="widget-column footer-widget-1">
+							<section id="recent-posts-2" class="widget widget_recent_entries"><h2 class="widget-title">Recent Posts</h2>		<ul><li>
+					<a href="2019/01/next-step-add-solr-search/">Next step: Add Solr search</a>
+									</li>
+											<li>
+					<a href="2019/01/blazing-fast-wordpress/">Blazing fast WordPress</a>
+									</li>
+											<li>
+					<a href="2019/01/my-second-post/">My second post</a>
+									</li>
+											<li>
+					<a href="2019/01/hello-world/">Hello world!</a>
+									</li>
+					</ul></section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul><li><a href="2019/01/">January 2019</a></li>
+		</ul></section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul><li class="cat-item cat-item-3"><a href="category/solr/">Solr</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="category/uncategorized/">Uncategorized</a>
+</li>
+		</ul></section></div>
+					</aside><div class="site-info">
+										<a class="site-name" href="" rel="home">wp-test</a>,
+						<a href="https://wordpress.org/" class="imprint">
+				Proudly powered by WordPress.			</a>
+			<a class="privacy-policy-link" href="privacy-policy/">Privacy Policy</a><span role="separator" aria-hidden="true"></span>					</div>
+	</footer><script type="text/javascript" src="contents/ui/mytheme/js/priority-menu.js"></script><script type="text/javascript" src="contents/ui/mytheme/js/touch-keyboard-navigation.js"></script><script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script></body></html>
