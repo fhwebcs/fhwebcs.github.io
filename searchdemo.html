@@ -90,7 +90,7 @@
 
               $("#search").click(function(){
                 $("#rs").empty();
-                $.getJSON("http://search.web-cs.io:8984/solr/select?q=" + $("#searchterm").val() + "&wt=json&json.wrf=?&indent=true", function(result){
+                $.getJSON("https://search.web-cs.io/solr/select?q=" + $("#searchterm").val() + "&wt=json&json.wrf=?&indent=true", function(result){
                   $("#rs").append(headTemplate({
                       search: $("#searchterm").val(),
                       found: result.response.docs.length > 0
