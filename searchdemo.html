@@ -1,0 +1,125 @@
+
+<html>
+    <head>
+        <title>search</title>
+        <script src="search.js"></script>
+        <script src="search-handlebar.js"></script>
+        <link rel='stylesheet' id='twentynineteen-style-css'  href='contents/ui/mytheme/style.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='twentynineteen-print-style-css'  href='contents/ui/mytheme/print.css' type='text/css' media='print' />
+    </head>
+    <body class="search search-results image-filters-enabled">
+            <div id="page" class="site">
+
+                <div id="content" class="site-content">
+                    <section id="primary" class="content-area">
+                        <main id="main" class="site-main">
+
+                                <article class="post type-post status-publish format-standard has-post-thumbnail hentry entry">
+                                    <div class="entry-content">
+                                        <b>Handlebars.js and Solr Demo</b><br>
+                                        Type in something and click the <b>search</b> button!<br>
+                                        
+                                        <label>
+                                        <input style="width:100%" id="searchterm" type="search" class="search-field" placeholder="Search …" value="asdsad" name="s" />
+                                        </label>
+                                        <input style="vertical-align: middle; margin: 1rem 0;" id="search" type="submit" class="search-submit" value="Search">
+                                    
+                                    </div>
+                                </article>
+                            
+                            <div id="rs"></div>
+                        </main>
+                    </section>
+                </div>
+            </div>
+
+            <script id="hit-template-alt" type="text/x-handlebars-template">
+              <div class="entry">
+                
+                {{#if image}} <img src="{{image}}" /> {{/if}}
+                <b><a href="{{link}}">{{title}}</a></b><br>
+                {{{text}}}
+              </div>
+            </script>
+            <script id="head-template" type="text/x-handlebars-template">
+                <header class="page-header">
+                    {{#if found}}
+                        <h1 class="page-title">
+                            Search results for:</h1>
+                        <div class="page-description">{{search}}</div>
+                    {{else}}
+                        <h1 class="page-title">Nothing Found</h1>
+                        <div class="page-content">
+                            <p>Sorry, but nothing matched your search terms. Please try again with some different keywords.</p>
+                        </div>
+                    {{/if}}
+                </header>
+            </script>
+            <script id="hit-template" type="text/x-handlebars-template">
+                <article class="post type-post status-publish format-standard has-post-thumbnail hentry entry">
+                    <header class="entry-header">
+                        <h2 class="entry-title"><a href="{{link}}" rel="bookmark">{{title}}</a></h2>
+                    </header>
+                
+                    <figure class="post-thumbnail">
+                        <a class="post-thumbnail-inner" href="{{link}}" aria-hidden="true" tabindex="-1">
+                            <!--<img src="{{image}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="" sizes="" width="100" height="100"></a>-->
+                            {{{image}}}
+                        </a>
+                    </figure>
+                            
+                    <div class="entry-content">
+                        <p>{{{text}}}</p>
+                    </div>
+                
+                    {{#if footer}}
+                    <footer class="entry-footer">
+                        <span class="byline"><svg class="svg-icon" width="16" height="16" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><span class="screen-reader-text">Posted by</span><span class="author vcard"><a class="url fn n" href="{{authorlink}}">{{author}}</a></span></span>
+                        <span class="posted-on"><svg class="svg-icon" width="16" height="16" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><path id="a" d="M0 0h24v24H0V0z"></path></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"></use></clipPath><path clip-path="url(#b)" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"></path></svg><a href="{{link}}" rel="bookmark"><time class="entry-date published" datetime="{{postdate}}">{{displaydate}}</time></a></span>
+                        {{#if cats}}
+                        <span class="cat-links"><svg class="svg-icon" width="16" height="16" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><span class="screen-reader-text">Posted in</span>{{{cats}}}</span>
+                        {{/if}}
+                        <!--<span class="comments-link"><svg class="svg-icon" width="16" height="16" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><a href="http://holger.box:8000/2019/01/hello-world/#respond">Leave a comment<span class="screen-reader-text"> on Hello world!</span></a></span>-->
+                    </footer>
+                    {{/if}}
+                </article>
+            </script>
+            <script type='text/javascript'>
+              var hitTemplate = Handlebars.compile($("#hit-template").html());
+              var headTemplate = Handlebars.compile($("#head-template").html());
+
+              $("#search").click(function(){
+                $("#rs").empty();
+                $.getJSON("http://search.web-cs.io:8984/solr/select?q=" + $("#searchterm").val() + "&wt=json&json.wrf=?&indent=true", function(result){
+                  $("#rs").append(headTemplate({
+                      search: $("#searchterm").val(),
+                      found: result.response.docs.length > 0
+                  }));
+                  
+                  for (var i = 0; i < result.response.docs.length; i++) {
+                    let d = result.response.docs[i];
+                    let cats = [];
+                    if( d.categories_str ) {
+                        for(var j = 0; j < d.categories_str.length; j++ ) {
+                            cats.push( '<a href="/category/'+d.categories_slug_str[j]+'/" rel="category tag">' + d.categories_str[j] + '</a>' );
+                        }
+                    }
+                    
+                    $("#rs").append(hitTemplate({
+                        cats: cats.join(', '),
+                        footer: d.post_type == 'post',
+                        title: result.response.docs[i].post_title, 
+                        link: result.response.docs[i].permalink, 
+                        image: result.response.docs[i].featured_image,
+                        displaydate: result.response.docs[i].displaydate,
+                        postdate: result.response.docs[i].post_date,
+                        author: result.response.docs[i].post_author,
+                        authorlink: result.response.docs[i].author_s,
+                        text: result.response.docs[i].post_excerpt}));
+                  }
+                  
+                });
+              });
+            </script>
+    </body>
+</html>
